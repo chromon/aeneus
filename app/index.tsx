@@ -3,7 +3,7 @@ import {
     Dimensions, StyleSheet, Text, TouchableOpacity, View
 } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context';
-import ListView from './components/list_view';
+import FuncList from './components/func_list';
 
 export default function Index() {
 
@@ -15,14 +15,14 @@ export default function Index() {
             <View style={styles.transferView}>
                 <TouchableOpacity style={[styles.transferBtn, styles.transferBtnColor]} activeOpacity={0.8}>
                     <Text style={styles.transferText}>我要发送</Text>
-                    <Text style={styles.transferTextWhite}>发送文件到手机</Text>
+                    <Text style={styles.transferTextWhite}>从手机发送文件</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.transferBtn} activeOpacity={0.8}>
                     <Text style={styles.transferText}>我要接收</Text>
                     <Text style={styles.transferTextWhite}>从手机接收文件</Text>
                 </TouchableOpacity>
             </View>
-            <ListView/>
+            <FuncList/>
         </SafeAreaView>
     )
 }

@@ -6,7 +6,7 @@ import {
     StyleSheet, Text, TouchableOpacity, View
 } from 'react-native'
 
-export default function ListView() {
+export default function FuncList() {
 
     const router = useRouter();
 
@@ -46,22 +46,22 @@ const DATA = [
     {
         id: '1',
         title: '已发送内容',
-        path: 'home',
+        path: 'send',
     },
     {
         id: '2',
         title: '已接收内容',
-        path: 'idx',
+        path: 'receive',
     },
     {
         id: '3',
         title: '设置',
-        path: 'home',
+        path: 'setting',
     },
     {
         id: '4',
         title: '分享',
-        path: 'home',
+        path: 'share',
     },
 ];
 

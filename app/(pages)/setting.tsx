@@ -1,10 +1,10 @@
 import { Link } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
-export default function Idx() {
+const Setting = () => {
     return (
         <View>
-            <Link href="/home" style={styles.fcolor}>Home</Link>
+            <Link href="/index" style={styles.fcolor}>index</Link>
         </View>
     )
 }
@@ -15,3 +15,5 @@ const styles = StyleSheet.create({
         color: 'red',
     },
 });
+
+export default Setting;

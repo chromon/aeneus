@@ -14,22 +14,38 @@ export default function Layout() {
                     title: '网页传输',
                     headerShown: true,
                     headerShadowVisible: false,
-                    headerRight: () => <HeaderRight/>
+                    headerRight: () => <HeaderRight />
                 }} />
             <Stack.Screen
-                name="(pages)/idx"
+                name="(pages)/send"
                 options={{
-                    title: 'Idx',
+                    title: 'Send',
                     headerShown: true,
                     headerShadowVisible: false,
                 }} />
             <Stack.Screen
-                name="(pages)/home"
+                name="(pages)/receive"
                 options={{
-                    title: 'Home',
+                    title: 'Receive',
                     headerShown: true,
                     headerShadowVisible: false,
                 }} />
+            <Stack.Screen
+                name="(pages)/setting"
+                options={{
+                    title: 'Setting',
+                    headerShown: true,
+                    headerShadowVisible: false,
+                }} />
+            <Stack.Screen
+                name="(pages)/share"
+                options={{
+                    title: 'Share',
+                    headerShown: true,
+                    headerShadowVisible: false,
+                }} />
+
+            <Stack.Screen name="+not-found" options={{ title: 'Screen Not Found' }} />
         </Stack>
     )
 }
